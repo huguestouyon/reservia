@@ -1,3 +1,73 @@
-body{
-	
+body {
+	font-family: "Raleway";
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/* Nav */
+.list-nav a {
+	text-decoration: none;
+	color: black;
+}
+.list-nav {
+	margin-right: 10%;
+	display: flex;
+	flex-direction: row;
+	float: right;
+}
+.nav {
+	padding-left: 10%;
+	padding-top: 10%;
+}
+.nav a:hover {
+	border-top: solid 1px;
+	padding-top: 0%; /* MODIF */
+	border-top-color: #0065FC;
+	color: #0065FC;
+}
+.logo {
+	margin-left: 2%;
+	width: 5%;
+}
+/* Hébergement */
+.hebergements {
+	display: flex;
+	flex-direction: row;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.hebergement-a-marseille {
+	background-color: #F2F2F2;
+}
+.les-plus-populaires {
+	background-color: #F2F2F2;
+	padding: 5%;
+}
+/* Footer */ 
+.footer {
+	max-width: 100%; 
+	background-color: #F2F2F2;
+}
+.footercontaint {
+	display: flex;
+	max-width: 100%;
+	width: 70%;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 0 2rem;
+}
+.footercolumn {
+	width: 30%;
+	padding: 2rem 2rem;
+}
+.footertitle {
+	font-weight: bold;
+}
+.footerlink {
+	display: block;
+	margin: 5% 0;
 }
