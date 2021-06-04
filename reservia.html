@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="reservia.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
     <!-- titre de la page -->
     <title>Réservia</title>
     
@@ -16,30 +16,34 @@
     <!-- En tête -->
     <header> 
     <!-- Navigation -->
-        <nav>
+        <nav class="nav">
             <!-- Titre 1 de la page -->
-            <img class="logo" src="images/logo/reservia_logo.png" alt="Reservia">
+            <a href="#">
+                <img class="logo" src="images/logo/Reservia.svg" alt="Reservia">
+            </a>
         <!-- Liste navigation-->
                 <ul class="list-nav">
-                    <li class="nav"><a href="#">Hébergements</a></li>
-                    <li class="nav"><a href="#">Activités</a></li>
-                    <li class="nav"><a href="#">S&apos;inscrire</a></li>
+                    <li><a class="nav-link" href="#">Hébergements</a></li>
+                    <li><a class="nav-link" href="#">Activités</a></li>
+                    <li><a class="nav-register" href="#">S&apos;inscrire</a></li>
                 </ul>
         </nav>
         <section class="search">
                 <!-- Titre 2 de la page -->
-            <h2>Trouvez vos hébergement pour des vacances de r&ecirc;ve</h2>
+            <h1>Trouvez vos hébergement pour des vacances de r&ecirc;ve</h1>
 
             <!-- Paragraphe -->
             <p>En plein centre ville ou en pleine nature</p>
-            <form action"" method="post">
-                <div>
-                    <i class="fas fa-map-marker-alt"></i> <input type="text" value=" Marseille, France"><button class="button" type="submit">Rechercher</button>
+            <form class="search-form" action"" method="post">
+                <div class="search-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" value=" Marseille, France">
+                    <button class="button" type="submit">Rechercher</button>
                 </div>
             </form>
 
             <div>
-                Filtres
+                <p>Filtres</p>
                 <!-- Economique -->
                 <i class="fas fa-money-bill-wave">&#201;conomique</i>
                 <!-- Familial -->
@@ -192,7 +196,7 @@
                     <!-- Image 2 --> 
                     <div class="hebergement-carte-item">
                         <a href="#">
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'h&ocirc;tes">                        
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'h&ocirc;tes">
                             <div class="hebergement-carte-item-contenu">
                                 <h3>Au coeur de l'eau Chambres d'h&ocirc;tes</h3>
                                 <p>Nuit à partir de 71€</p>
@@ -227,26 +231,64 @@
             </div>
         </div>
         <!-- Activité à Marseille -->
-        <div class="">
+        <div class="activite-marseille">
             <h2>Activité à Marseille</h2>
-            <!-- Image 1 -->
-            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-            <div> Vieux Port </div>
-            <!-- Image 2 -->
-            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-            <div> Fort de Pomègues </div>
-            <!-- Image 3 -->
-            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="&#206;les du Frioul">
-            <div> &#206;les du Frioul </div>
-            <!-- Image 4 -->
-            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-            <div> Parc National des Calanques </div>
-            <!-- Image 5 -->
-            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-            <div> Notre-Dame-de-la-Garde </div>
-            <!-- Image 6-->
-            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-            <div> Parc Longchamp </div>
+            <div class="activite-carte">
+                <!-- Image 1 -->
+                <div class="activite-carte-item">
+                    <a href="#">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                        <div class="activite-carte-item-contenu">
+                            <h3>Vieux Port</h3>       
+                        </div>               
+                    </a>     
+                </div>
+                <!-- Image 2 -->
+                <div class="activite-carte-item">
+                    <a href="#">
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                        <div class="activite-carte-item-contenu">
+                            <h3>Fort de Pomègues</h3>                            
+                        </div>    
+                    </a>
+                </div>
+                <!-- Image 3 -->
+                <div class="activite-carte-item">
+                    <a href="#">
+                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="&#206;les du Frioul">                        
+                        <div class="activite-carte-item-contenu">
+                            <h3>&#206;les du Frioul</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Image 4 -->
+                <div class="activite-carte-item">
+                    <a href="#">
+                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">    
+                        <div class="activite-carte-item-contenu">
+                            <h3>Parc National des Calanques</h3>    
+                        </div>
+                    </a>
+                </div>
+                <!-- Image 5 -->
+                <div class="activite-carte-item">
+                    <a href="#">
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                        <div class="activite-carte-item-contenu">    
+                            <h3> Notre-Dame-de-la-Garde </h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Image 6-->
+                <div class="activite-carte-item">
+                    <a href="#"> 
+                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        <div class="activite-carte-item-contenu"> 
+                            <h3> Parc Longchamp </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Pied de page -->
