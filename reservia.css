@@ -152,7 +152,27 @@ a {
 .information i {
 	color: #0065FC;
 }
+
 /* Hébergement */
+.hebergements {
+	display: grid;
+	column-gap: 2rem;
+	grid-template-columns: 2fr 1fr;
+}
+.hebergements h2 {
+ padding-bottom: 1rem;
+}
+.hebergement-cartes{
+	display: grid;
+	column-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+.hebergement-a-marseille, .les-plus-populaires{
+	background-color: #F2F2F2;
+	border-radius: 1.7rem;
+	padding: 2rem;
+}
+/*
 .hebergements {
 	display: flex;
 	flex-direction: row;
@@ -166,6 +186,7 @@ a {
 	background-color: #F2F2F2;
 	padding: 5%;
 }
+*/
 /* Footer */ 
 .footer {
 	max-width: 100%; 
