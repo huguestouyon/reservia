@@ -93,7 +93,7 @@ a {
 /* Filtres */
 .filter {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row wrap; /* = flex-direction + flex-wrap */
 	padding-bottom: 1rem;
 }
 
@@ -105,12 +105,17 @@ a {
 .filter-container {
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
 	margin-right: 2rem;
 	border: 2px solid #F2F2F2;
 	border-radius: 2rem;
 	margin-bottom: 1rem;
 	font-weight: bold;
+	background-color: white;
 	cursor: pointer;
+}
+.filter-container:hover {
+	background-color: #F2F2F2
 }
 .filter-icon {
 	background-color: #DEEBFF;
@@ -133,8 +138,8 @@ a {
 
 /* Information */
 .information {
-	display: flex;
-	align-items: center;
+	display: flex; /* Defini en temps que boîte flexible*/
+	align-items: center; /* Défini l'alignement d'un objet dans son conteneur */
 	margin-bottom: 2rem; 
 }
 .information-item {
@@ -143,10 +148,10 @@ a {
 	min-width: 2rem;
 	min-height: 2rem;
 	border: solid 1px #F2F2F2;
-	border-radius: 100%;
+	border-radius: 100%;  /* Permet de faire un cercle */
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; /* Façon dont l'espace est réparti entre les éléments */
 	margin-right: 1rem;
 }
 .information i {
@@ -154,39 +159,90 @@ a {
 }
 
 /* Hébergement */
+.hebergement-a-marseille, .les-plus-populaires{
+	background-color: #F2F2F2;
+	border-radius: 1.5rem;
+	padding: 2rem;
+}
 .hebergements {
-	display: grid;
-	column-gap: 2rem;
-	grid-template-columns: 2fr 1fr;
+	display: grid; /* Défini en grille */
+	column-gap: 2rem; /* Espace entre deux colonnes */
+	grid-template-columns: 2fr 1fr; /* Proportion du tableau */ 
 }
 .hebergements h2 {
  padding-bottom: 1rem;
 }
+
+/* Hébergement à Marseille */ 
+
 .hebergement-cartes{
-	display: grid;
-	column-gap: 2rem;
-	grid-template-columns: repeat(3, 1fr);
+	display: grid; /* Défini en grille */
+	column-gap: 2rem; /* Espace entre deux colonnes */
+	grid-template-columns: repeat(3, 1fr); /* Proportion du tableau */ 
+	grid-row-gap: 2rem /* Espace entre deux lignes*/
 }
-.hebergement-a-marseille, .les-plus-populaires{
-	background-color: #F2F2F2;
-	border-radius: 1.7rem;
-	padding: 2rem;
-}
-/*
-.hebergements {
+.hebergement-carte-item {
 	display: flex;
-	flex-direction: row;
-	margin-left: 2%;
-	margin-right: 2%;
+	flex-direction: column;
+	box-shadow: 0px 0px 10px #a1a1a1;
+	border-radius: 1.5rem;
+	padding: 0.2rem;
+	background-color: white;
 }
-.hebergement-a-marseille {
-	background-color: #F2F2F2;
+.hebergement-carte-item a:hover {
+	transform: scale(1.02);
 }
-.les-plus-populaires {
-	background-color: #F2F2F2;
-	padding: 5%;
+.hebergement-carte-item img {
+	height: 7rem;
+	object-fit: cover; /* Permet d'ajuster l'image pour conserver ses proportions */
+	max-width: 100%;
+	width: 100%;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
-*/
+.hebergement-carte-item-contain {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 90px;
+	padding: 0 0 0 15px;
+}
+.fa-star--activate {
+	color: #0065FC;
+}
+.rating {
+	color: #b1b1b1;
+}
+
+/* Populaire */
+
+.populaire-cartes {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-row-gap: 2rem;
+}
+.populaire-carte-item {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 10px #a1a1a1;
+	border-radius: 1.5rem;
+	padding: 0.2rem; 
+	justify-content: column;
+	background-color: white;
+}
+.populaire-carte-item img {
+	height: 9rem;
+	object-fit: cover;
+	width: 33%;
+	border-radius: 1.5rem 1.5rem 0 0;
+}
+.populaire-carte-item-contain {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 90px;
+	padding: 0 0 0 15px;
+}
+
 /* Footer */ 
 .footer {
 	max-width: 100%; 
