@@ -172,6 +172,12 @@ a {
 .hebergements h2 {
  padding-bottom: 1rem;
 }
+.fa-star--activate {
+	color: #0065FC;
+}
+.rating {
+	color: #b1b1b1;
+}
 
 /* Hébergement à Marseille */ 
 
@@ -206,18 +212,15 @@ a {
 	min-height: 90px;
 	padding: 0 0 0 15px;
 }
-.fa-star--activate {
-	color: #0065FC;
-}
-.rating {
-	color: #b1b1b1;
+.view-more-link {
+	font-weight: bold;
 }
 
 /* Populaire */
 
 .populaire-cartes {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	align-items: start;
 	grid-row-gap: 2rem;
 }
 .populaire-carte-item {
@@ -225,24 +228,42 @@ a {
 	flex-direction: column;
 	box-shadow: 0px 0px 10px #a1a1a1;
 	border-radius: 1.5rem;
-	padding: 0.2rem; 
-	justify-content: column;
+	padding: 0.2rem;
 	background-color: white;
 }
 .populaire-carte-item img {
 	height: 9rem;
 	object-fit: cover;
 	width: 33%;
-	border-radius: 1.5rem 1.5rem 0 0;
+	min-width: 33%;
+	max-width: 33%;
+	border-radius: 1.5rem 0 0 1.5rem;
 }
 .populaire-carte-item-contain {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	min-height: 90px;
-	padding: 0 0 0 15px;
 }
-
+.populaire-carte-item a {
+	display: flex;
+	align-items: stretch;
+	height: 100%;
+	overflow: auto;
+}
+.populaire-carte-item a:hover {
+	transform: scale(1.02);
+}
+.populaire-white-place {
+	flex: 1;
+}
+.populaire-carte-item-contain h3 {
+	margin: 0.5rem;
+}
+.populaire-carte-item-contain p {
+	margin: 0rem 0.5rem 0;
+}
+.populaire-carte-item-contain .rating {
+	margin: 0rem 0.5rem 0.2rem;
+}
 /* Footer */ 
 .footer {
 	max-width: 100%; 
