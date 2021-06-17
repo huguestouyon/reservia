@@ -1,7 +1,6 @@
 /* Global */
 body {
 	font-family: 'Raleway', sans-serif;
-	margin: 0 15%;
 }
 ul {
 	list-style: none;
@@ -15,9 +14,13 @@ a {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-
+.container {
+	margin: 0 10%;
+}
+.strong { /* Mot en gras */
+	font-weight: bold;
+}
 /* Nav */
 .list-nav {
 	display: flex;
@@ -134,7 +137,8 @@ a {
 	color: #0065FC;
 }
 .filter-title {
-	margin: 0 1rem;
+	margin: 0 1.5rem;
+	font-size: 17px;
 }
 
 /* Information */
@@ -277,86 +281,18 @@ a {
 	font-size: 2rem;
 }
 
-/* Activite */
-/*
-.activities h2 {
-	font-size: 2rem;
-	padding: 30px 0 30px 0;
+/* Activités à Marseille */
+.activities-title {
+	font-size: 1.5rem;
+	padding: 30px 0 0px 0;
 	margin-top: 3rem;
 }
-.activities-cards {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: auto;
-	grid-gap: 40px;
-}
-.activities-cards-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-radius: 1.5rem;
-	box-shadow: 0px 0px 10px var(--shadow);
-}
-.activities-cards-item, .activities-cards-item a, .activities-cards-item a:nth-child(1) img, .activities-cards-item a:nth-child(4) img {
-	height: 100%;
-}
-.activities-cards-item:hover {
-	transform: scale(1.01);
-}
-.activities-cards-item1 {
-	grid-row: 2/7;
-	grid-column: 1/2;
-}
-/*
-.activities a:nth-child(1) {
-	grid-column: 1 / 2;
-	grid-row: 1 / 3;
-}
-.activities a:nth-child(2) {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-}
-.activities a:nth-child(3) {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-.activities a:nth-child(4) {
-	grid-column: 3 / 4;
-	grid-row: 1 / 3;
-}
-.activities a:nth-child(5) {
-	grid-column: 4 / 5;
-	grid-row: 1 / 2;
-}
-.activities a:nth-child(6) {
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-}
-.activities-cards-item img {
-	width: 100%;
-	height: 17.6rem;
-	object-fit: cover;
-	border-radius: 1.5rem 1.5rem 0 0;
-}
-.activities-cards h3 {
-	padding: 20px;
-	border-radius: 0 0 1.5rem 1.5rem;
-	box-shadow: 0px 0px 10px #a1a1a1;
-}
-*/
 .activities {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: auto;
 	grid-gap: 40px;
-}
-.activities h2 {
-	font-size: 2rem;
-	padding: 30px 0 30px 0;
-	margin-top: 2rem;
-}
-.activities-card {
-	
+	padding: 2rem 0 2rem 0;
 }
 .activities-card:hover {
 	transform: scale(1.01);
@@ -376,7 +312,7 @@ a {
 }
 .activities-card h3 {
 	padding: 20px;
-	border-radius: 0 0 1.5rem 0 0;
+	border-radius: 0 0 1.5rem 1.5rem;;
 	box-shadow: 0 0 10px #a1a1a1;
 }
 .activities-card-contain, .activities-card1 img, .activities-card4 img {
@@ -415,7 +351,7 @@ a {
 .footercontain {
 	display: flex;
 	max-width: 100%;
-	/* width: 70%; */
+	width: 90%; 
 	margin: auto;
 	box-sizing: border-box;
 	padding: 0 2rem;
@@ -431,4 +367,44 @@ a {
 .footerlink {
 	display: block;
 	margin: 5% 0;
+}
+
+
+/* Ecran Iphone 8 */ 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+	.container {
+		margin: 0 5%;
+	}
+	/* Navigation */
+	.nav img {
+		padding: 1.5rem 1.5rem;
+	}
+	.nav {
+		padding: unset;
+	}
+	.nav a {
+		
+	}
+	.nav-link {
+
+	}
+	.nav-register {
+		padding-left: unset;
+		font-weight: bold;
+		color: #0065FC;
+		display: block;
+		margin-top: 0px;
+	}
+	.search h1 {
+		font-size: 1.4rem;
+		padding-bottom: 0.8rem;
+	}
+	.search-p {
+		padding-bottom: 1.5rem;	
+	}
+}
+
+/* Ecran Tablette */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
 }
