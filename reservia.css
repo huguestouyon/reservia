@@ -47,6 +47,7 @@ a {
 	font-weight: bold;
 	color: #0065FC;
 }
+
 /* Recherche */
 .search h1 {
 	padding-bottom: 1rem;
@@ -62,7 +63,7 @@ a {
 	align-items: center;
 	padding-bottom: 2rem;
 }
-.search-container i {
+.search-gps {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -92,7 +93,9 @@ a {
 	border-radius: 0 1.5rem 1.5rem 0;
 	border: none;
 }
-
+.search-icon {
+	display: none;
+}
 /* Filtres */
 .filter {
 	display: flex;
@@ -375,18 +378,38 @@ a {
 	.container {
 		margin: unset;
 	}
-	/* Navigation */
+	/* Header */
+	.search {
+		margin: 31px;
+	}
 	.nav img {
 		padding: 1.5rem 1.5rem;
 	}
 	.nav {
 		padding: unset;
+		position: relative;
+		display: block;
+		padding-bottom: 1rem;
 	}
-	.nav a {
-		
+	.nav li:last-child {
+		position: absolute;
+		top: 2.6rem;
+		right: 1.2rem;
+	}
+	.nav ul {
+		justify-content: space-around;
+
+	}
+	.nav-link:nth-child(1), .nav-link:nth-child(2) {
+		border-top: none;
+		border-bottom: 2px solid #F2F2F2;
+	}
+	.nav-link:hover {
+		border-top: none;
+		border-bottom: 2px solid #0065FC;		
 	}
 	.nav-link {
-
+		padding: 1rem 3.14rem;
 	}
 	.nav-register {
 		padding-left: unset;
@@ -400,9 +423,37 @@ a {
 	.search-p {
 		padding-bottom: 1.5rem;	
 	}
+	.search-icon {
+		color: white;
+		background-color: #0065FC;
+		height: 4rem;
+		width: 4rem;
+		font-size: ;
+		font-weight: bold;
+		border-radius: 1.5rem;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.search-icon i {
+	}
+	.button {
+		display: none;
+	}
 	.information {
 		margin: 0 0 2rem 1rem;
 	}
+	.filter h2 {
+		width: 100%;
+	}
+	.filter-title {
+		margin: 0 1rem;
+	}
+	.filter-container {
+		margin-right: 1rem;
+	}
+
 	
 	/* Hébergement */
 	.hebergements {
@@ -452,7 +503,7 @@ a {
 	.footercontain {
 		flex-flow: column nowrap;
 		margin: unset;
-		padding: 2rem;
+		padding: 2rem 0;
 	}
 	.footercolumn {
 		width: unset;
@@ -461,6 +512,10 @@ a {
 }
 
 /* Ecran Tablette */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+}
+/* Ecran Tablette */
+@media screen and (min-width: 1001px) and (max-width: 1279px) {
 
 }

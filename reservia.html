@@ -25,8 +25,8 @@
                 </a>
             <!-- Liste navigation-->
                     <ul class="list-nav">
-                        <li><a class="nav-link" href="#">Hébergements</a></li>
-                        <li><a class="nav-link" href="#">Activités</a></li>
+                        <li><a class="nav-link" href="#hebergements">Hébergements</a></li>
+                        <li><a class="nav-link" href="#activities">Activités</a></li>
                         <li><a class="nav-register" href="#">S&apos;inscrire</a></li>
                     </ul>
             </nav>
@@ -38,11 +38,14 @@
                 <p class="search-p">En plein centre ville ou en pleine nature</p>
                 <form class="search-form" action="" method="post">
                     <div class="search-container">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="search-gps">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <input type="text" value=" Marseille, France">
                         <button class="button" type="submit">
                             <span>Rechercher</span>
                         </button>
+                        <div class="search-icon"><i class="fas fa-search"></i></div>
                         
                     </div>
                 </form>
@@ -91,7 +94,7 @@
         </header>
 
         <main>
-            <div class="hebergements">
+            <div id="hebergements" class="hebergements">
                 <!-- Hébergement à Marseille -->
                 <div class="hebergement-a-marseille">
                     <h2>Hébergements à Marseille</h2>
@@ -204,7 +207,7 @@
             
                 
                 <!-- Les plus populaires -->
-                <div class="les-plus-populaires">
+                <div id="les-plus-populaires" class="les-plus-populaires">
                     <div class="populaire-title">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
@@ -269,7 +272,7 @@
             </div>
             
             <!-- Activité à Marseille -->
-            <h2 class="activities-title">Activités à Marseille</h2>
+            <h2 id="activities" class="activities-title">Activités à Marseille</h2>
             <div class="activities">
                 
                 <a href="#" href="#" class="activities-card activities-card1">
