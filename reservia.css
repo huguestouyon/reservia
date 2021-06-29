@@ -191,7 +191,7 @@ a {
 	display: grid; /* Défini en grille */
 	column-gap: 2rem; /* Espace entre deux colonnes */
 	grid-template-columns: repeat(3, 1fr); /* Proportion du tableau */
-	grid-row-gap: 2rem /* Espace entre deux lignes*/
+	grid-row-gap: 2rem; /* Espace entre deux lignes*/
 }
 .hebergement-carte-item {
 	display: flex;
@@ -591,7 +591,7 @@ a {
 		display: grid; /* Défini en grille */
 		column-gap: 2rem; /* Espace entre deux colonnes */
 		grid-template-columns: repeat(3, 1fr); /* Proportion du tableau */
-		grid-row-gap: 2rem /* Espace entre deux lignes*/
+		grid-row-gap: 2rem; /* Espace entre deux lignes*/
 	}
 	.populaire-carte-item {
 		display: flex;
@@ -640,5 +640,107 @@ a {
 }
 /* Ecran Tablette */
 @media screen and (min-width: 1001px) and (max-width: 1279px) {
+	.container {
+		all: unset;
+	}
 
+	/* Nav */
+	header {
+		margin: 0 5%;
+	}
+	.filter h2 {
+		width: 100%;
+	}
+	.filter-title {
+		margin: 0 1rem;
+	}
+	.filter-container {
+		margin-right: 20%;
+	}
+
+	/* Hébergement */
+	.hebergements {
+		grid-template-columns: unset;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		gap: unset;
+	}
+	.hebergement-a-marseille {
+		border-radius: 0 0 1.5rem 1.5rem;
+	}
+	.les-plus-populaires {
+		order: -1;
+		border-radius: 1.5rem 1.5rem 0 0;
+	}
+	.populaire-cartes{
+		display: grid; /* Défini en grille */
+		column-gap: 2rem; /* Espace entre deux colonnes */
+		grid-template-columns: repeat(3, 1fr); /* Proportion du tableau */
+		grid-row-gap: 2rem; /* Espace entre deux lignes*/
+	}
+	.populaire-carte-item {
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0px 0px 10px #a1a1a1;
+		border-radius: 1.5rem;
+		padding: 0.2rem;
+		background-color: white;
+	}
+	.populaire-carte-item img {
+		height: 10rem;
+		object-fit: cover; /* Permet d'ajuster l'image pour conserver ses proportions */
+		max-width: 100%;
+		width: 100%;
+		border-radius: 1.5rem 1.5rem 0 0;
+	}
+	.populaire-carte-item-contain {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		min-height: 90px;
+		padding: 0 0 0 15px;
+		height: 7rem;
+	}
+	.populaire-carte-item a {
+		all: unset;
+	}
+	.populaire-white-place {
+		all: unset;
+	}
+
+	/* Activité */
+
+	.activities {
+		display: grid; /* Défini en grille */
+		column-gap: 2rem; /* Espace entre deux colonnes */
+		grid-template-columns: repeat(3, 1fr); /* Proportion du tableau */
+		grid-row-gap: 2rem; /* Espace entre deux lignes*/
+		margin: 0 5%;
+	}
+	.activities-title {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.activities-card {
+		all: unset;
+	}
+	.activities-card img {
+		height: 11rem;
+		object-fit: cover; /* Permet d'ajuster l'image pour conserver ses proportions */
+		max-width: 100%;
+		width: 100%;
+		border-radius: 1.5rem 1.5rem 0 0;
+	}
+	.activities-card1, .activities-card2, .activities-card3, .activities-card4, .activities-card5, .activities-card6 {
+		grid-row: unset;
+		grid-column: unset;
+	}
+}
+
+/* Légère modification pour les filtres */
+@media screen and (min-width: 1280px) and (max-width: 1329px) {
+	.filter-container {
+		margin-right: 1rem;
+	}
 }
