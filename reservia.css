@@ -617,10 +617,13 @@ a {
 		height: 7rem;
 	}
 	.populaire-carte-item a {
-		all: unset;
+		display: unset;
+		align-items: unset;
+		height: unset;
+		overflow: unset;
 	}
 	.populaire-white-place {
-		all: unset;
+		fill: unset;
 	}
 
 	/* Activité */
@@ -641,7 +644,7 @@ a {
 /* Ecran Tablette */
 @media screen and (min-width: 1001px) and (max-width: 1279px) {
 	.container {
-		all: unset;
+		fill: unset;
 	}
 
 	/* Nav */
@@ -688,11 +691,12 @@ a {
 		background-color: white;
 	}
 	.populaire-carte-item img {
-		height: 10rem;
+		height: 7rem;
 		object-fit: cover; /* Permet d'ajuster l'image pour conserver ses proportions */
-		max-width: 100%;
 		width: 100%;
 		border-radius: 1.5rem 1.5rem 0 0;
+		min-width: 100%;
+		max-width: unset;
 	}
 	.populaire-carte-item-contain {
 		display: flex;
@@ -703,10 +707,12 @@ a {
 		height: 7rem;
 	}
 	.populaire-carte-item a {
-		all: unset;
+		display: unset;
+		align-items: unset;
+		overflow: unset;
 	}
 	.populaire-white-place {
-		all: unset;
+		fill: unset;
 	}
 
 	/* Activité */
@@ -723,7 +729,7 @@ a {
 		margin-left: 5%;
 	}
 	.activities-card {
-		all: unset;
+		fill: unset;
 	}
 	.activities-card img {
 		height: 11rem;
